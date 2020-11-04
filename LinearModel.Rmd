@@ -49,7 +49,11 @@ The plot of SIMS versus Grip plus ARM look like a plane in a 3 dimensional space
 model.1 <- lm(SIMS~ARM,data=dataF)
 summary.lm(model.1)
 ```
+
+We can see that this model 1, the adjusted R squared is 0.467 which is about 47% variations more than the mean model did. So this one is explaining more of the variations. 
+
 ## R Markdown
+
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
