@@ -31,11 +31,19 @@ basicNN <- ggplot(dataF,aes(y=SIMS,x=ARM))
 ```{r}
 basicNN + geom_point()+geom_smooth(method=lm)
 ```
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
-basicNN <- ggplot(dataF,aes(y=SIMS,x=ARM))
+basicNN <- ggplot(dataF,aes(y=SIMS,x=GRIP))
 ```
+## Now add in scatterplot
+
+```{r}
+basicNN + geom_point()+geom_smooth(method=lm)
+```
+
+The plot of SIMS versus Grip plus ARM look like a plane in a 3 dimensional space and we don't have the tools to plot it. 
 
 ## R Markdown
 
