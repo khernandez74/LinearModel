@@ -52,6 +52,14 @@ summary.lm(model.1)
 
 We can see that this model 1, the adjusted R squared is 0.467 which is about 47% variations more than the mean model did. So this one is explaining more of the variations. 
 
+
+```{r}
+model.2 <- lm(SIMS~GRIP,data=dataF)
+summary.lm(model.2)
+``` 
+
+We can see that model 2 the adjusted r squared is 0.4053
+
 ## R Markdown
 
 
