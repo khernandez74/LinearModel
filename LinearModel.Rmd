@@ -87,6 +87,11 @@ predict.lm(model.3,new)
 predict(model.3,new,interval="prediction")
 ```
 
+```{r}
+anova(model.1,model.3)
+```
+
+As we can see we can reject the null hypothesis. Model 3 is doing a much better job of predicting it. From this nova test we can conclude that model 3 is a much better model 
 ## R Markdown
 
 
