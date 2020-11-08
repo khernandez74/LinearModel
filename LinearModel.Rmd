@@ -91,24 +91,4 @@ predict(model.3,new,interval="prediction")
 anova(model.1,model.3)
 ```
 
-As we can see we can reject the null hypothesis. Model 3 is doing a much better job of predicting it. From this nova test we can conclude that model 3 is a much better model 
-## R Markdown
-
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The RSS of Model 1 is 217.88 and RSS of Model 2 is 188.43 which is about 30 points less than SIMS-ARM. This show that the result is significant becasue we are testing whether or not it would change the vaule of our assessment. The results shows a low P value so we reject the null hypothesis that there isn't any difference in how will the Model 1 explains ARM and how well Model 2 explains ARM. This means that model 3 is doing a much better job of predicting it and thats why we reject the null hypothesis. From this anova test we can conclude that model 3 is a much better model.
