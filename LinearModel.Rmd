@@ -60,6 +60,8 @@ predict.lm(model.1,new)
 predict(model.1,new,interval="prediction")
 ```
 
+Model 1 is predicting a value of 0.7063836 and the 95 confidence interval is somewhere in the -1.726209 and 3.138977.
+
 ```{r}
 model.2 <- lm(SIMS~GRIP,data=dataF)
 summary.lm(model.2)
@@ -74,18 +76,22 @@ predict.lm(model.2,new)
 predict(model.2,new,interval="prediction")
 ```
 
+Model 2 is predicting a value of -0.5361543 and the 95 confidence interval is somewhere in the -3.107961 and 2.035652
+
 ```{r}
 model.3 <- lm(SIMS~GRIP+ARM,data=dataF)
 summary.lm(model.3)
 ``` 
 
-The adjusted R squared we can see that it is 0.5358 which is bigger than model 1 and model 2. It explains more of the variation than either of both of them. This is the best model. 
+The adjusted R squared we can see that it is 0.5358 which is bigger adjusted R squared than model 1 and model 2. It explains more of the variation than either oof the other 2 model. This is the best model. Just by exploring the adjusted R squared if we are to rate the models Model 2 is the worst one. Model 1 is the second best one and Model 3 is the best model. 
 
 ```{r}
 new <- data.frame(ARM=88, GRIP=94)
 predict.lm(model.3,new)
 predict(model.3,new,interval="prediction")
 ```
+
+Model 3 is predicting a vaule of 0.1496476 and the 95 confidence interval is somewhere in the -2.132373 and 2.431668.
 
 ```{r}
 anova(model.1,model.3)
